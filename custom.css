@@ -18,3 +18,46 @@ h1{
 h2{
 font-size: 1.5rem;
 }
+.container-fluid.cv-hero {
+    max-width: 80em;
+}
+
+.circles-wrapper{
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.circle {
+    height: 100px;
+    aspect-ratio: 1/1;
+    flex: 0 0 100px;
+    background-color: #818181;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #fff;
+    font-family: 'Anton', sans-serif;
+    border-radius: 50%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.circle.red {
+    background-color: #E6563B;
+}
+.circle.yellow {
+    background-color: #EB9D3A;
+}
+.circle.green {
+    background-color: #7CB06C;
+}
+.circle.blue {
+    background-color: #00ABA9;
+}
+
+@media screen and (max-width: 500px) {
+    .circles-wrapper {
+        width: 300px;
+    }
+}
