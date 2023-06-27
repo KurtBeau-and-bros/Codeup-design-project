@@ -61,21 +61,16 @@ font-size: 1.5rem;
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .circles-wrapper {
         width: 300px;
+    }
+    .hidden-on-mobile {
+        display: none;
     }
 }
 
 .selected-work {
     margin: 4em;
 
-}
-
-@media screen and (max-width: 1200px) {
-     .image-box{
-
-
-
-    }
 }
