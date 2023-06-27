@@ -20,6 +20,7 @@ font-size: 1.5rem;
 }
 .container-fluid.cv-hero {
     max-width: 80em;
+
 }
 
 .circles-wrapper{
@@ -55,9 +56,26 @@ font-size: 1.5rem;
 .circle.blue {
     background-color: #00ABA9;
 }
+.border-line {
+    max-width: 100%;
+
+}
 
 @media screen and (max-width: 500px) {
     .circles-wrapper {
         width: 300px;
+    }
+}
+
+.selected-work {
+    margin: 4em;
+
+}
+
+@media screen and (max-width: 1200px) {
+     .image-box{
+
+
+
     }
 }
