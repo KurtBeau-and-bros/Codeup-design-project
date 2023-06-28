@@ -6,30 +6,37 @@
     --white: #f0f0f0;
     --grey: #e6e6e6
 }
+
 body {
     font-family: 'Abel', sans-serif;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Anton', sans-serif;
 }
-header{
-    background-color:#e6e6e6 ;
-}
-.mainBG{
+
+header {
     background-color: #e6e6e6;
 }
-h1{
+
+.mainBG {
+    background-color: #e6e6e6;
+}
+
+h1 {
     font-size: 2.7rem;
 }
-h2{
-font-size: 1.5rem;
+
+h2 {
+    font-size: 1.5rem;
 }
+
 .container-fluid.cv-hero {
     max-width: 80em;
-
 }
 
-.circles-wrapper{
+/*START of circle logo CSS*/
+.circles-wrapper {
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
@@ -53,43 +60,64 @@ font-size: 1.5rem;
 .circle.red {
     background-color: #E6563B;
 }
+
 .circle.yellow {
     background-color: #EB9D3A;
 }
+
 .circle.green {
     background-color: #7CB06C;
 }
+
 .circle.blue {
     background-color: #00ABA9;
 }
+
 .border-line {
     max-width: 100%;
 
 }
 
+/*END of circle logo CSS*/
+
+/* START media queries */
 @media screen and (max-width: 992px) {
     .circles-wrapper {
         width: 300px;
     }
+
     .hidden-on-mobile {
         display: none;
     }
+
     .margin {
-       margin: 50px;
+        margin: 50px;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .hidden-on-tablet {
+        display: none;
+    }
+}
+
+
+
+/* END media queries */
+
+
+/* padding "the last " content ..  used on line 183*/
+.pc {
+    padding: 50px;
+}
+
+/* added margin to text "selected work" */
 .selected-work {
     margin: 4em;
 
 }
 
-.last-image {
-    width: 30px;
-    aspect-ratio: 1/1;
-
-}
-
+/* Start of smaller circle CSS*/
 .circle-sm {
     height: 25px;
     width: 25px;
@@ -107,47 +135,68 @@ font-size: 1.5rem;
 .circle-sm.red {
     background-color: #E6563B;
 }
+
 .circle-sm.yellow {
     background-color: #EB9D3A;
 }
+
 .circle-sm.green {
     background-color: #7CB06C;
 }
+
 .circle-sm.blue {
     background-color: #00ABA9;
 }
+
+/* End of smaller circle CSS*/
+
 .margin {
     margin-top: 50px;
     margin-bottom: 100px;
 
 }
+
+/* m-b-l means margin bottom first to target the 1st 4 cards content on line 95*/
+.m-b-f {
+    margin-bottom: 60px;
+}
+
+/*START of "the last " CSS*/
+
+/*CSS for "last" content used on line 184*/
 .margin-last {
     margin-top: 50px;
     margin-bottom: 50px;
 
 }
-.pc {
-    padding: 50px;
-}
-img{
-    border: lightgrey solid 5px;
-    object-fit: fill;
-}
-/* m-b-l means margin bottom last to target "the last " content body */
+
+/* m-b-l means margin bottom last .. used in all Cards in  "the Last" section*/
 .m-b-l {
     margin-bottom: 80px;
 }
-/* m-b-l means margin bottom first to target the 1st 4 cards content on line 95*/
-.m-b-f {
-    margin-bottom: 60px;
-}
-.last-tweet-text{
+
+.last-tweet-text {
     font-weight: 500;
     font-family: sans-serif;
 }
 
+.last-image {
+    width: 30px;
+    aspect-ratio: 1/1;
+}
+
+/*END of "the last CSS"*/
+
+/* START IMG CSS*/
 img.card-img {
     width: 80px;
     height: 80px;
     object-fit: cover;
 }
+
+img {
+    border: lightgrey solid 5px;
+    object-fit: fill;
+}
+
+/* END IMG CSS*/
