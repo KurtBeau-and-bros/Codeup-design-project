@@ -133,9 +133,21 @@ img{
     border: lightgrey solid 5px;
     object-fit: fill;
 }
+/* m-b-l means margin bottom last to target "the last " content body */
 .m-b-l {
     margin-bottom: 80px;
 }
+/* m-b-l means margin bottom first to target the 1st 4 cards content on line 95*/
 .m-b-f {
     margin-bottom: 60px;
+}
+.last-tweet-text{
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+img.card-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
 }
